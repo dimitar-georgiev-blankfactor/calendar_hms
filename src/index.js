@@ -3,12 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {createClient} from '@supabase/supabase-js';
+import {SessionContextProvider} from '@supabase/auth-helpers-react';
+
+const supabase = createClient(
+  "https://esyyfzmmbcbufnwrkevh.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVzeXlmem1tYmNidWZud3JrZXZoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTg4ODQ5MzIsImV4cCI6MjAzNDQ2MDkzMn0.CS4FWDfDyukU5eZGSWzyOemKGEgFTdNdsQ3ScDmrtvA" 
+);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+  <SessionContextProvider supabaseClient={supabase}>
     <App />
-  </React.StrictMode>
+  </SessionContextProvider>
+</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
