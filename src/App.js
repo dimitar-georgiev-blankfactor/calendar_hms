@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useSession, useSupabaseClient, useSessionContext } from '@supabase/auth-helpers-react';
 import React, { useState } from 'react';
