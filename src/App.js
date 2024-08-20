@@ -183,7 +183,7 @@ function populateTableSvetoslav(data) {
   return (
     <div className="App">
 
-      <h1>Fancy Calendar</h1>
+      <h1>Fancy Calendar &#128054;</h1>
       <FancyCalendar />
 
        <div style={{width: "400px", margin: "30px auto"}}>
