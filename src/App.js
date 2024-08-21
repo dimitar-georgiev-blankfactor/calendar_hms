@@ -78,12 +78,12 @@ function populateTableSvetoslav(data) {
 
 
 //INSTANTIATE FANCY CALENDAR
-  function FancyCalendar(datePattern) {
+  function FancyCalendar() {
 
     const [events, setEvents] = useState([]);
   
     const fetchGoogleCalendarData = async () => {
-    const response = await fetch("https://www.googleapis.com/calendar/v3/calendars/hms@blankfactor.com/events?q=HomeOffice - Svetoslav Zlatev&timeMin=" + datePattern + "&showDeleted=false", {
+    const response = await fetch("https://www.googleapis.com/calendar/v3/calendars/hms@blankfactor.com/events?q=HomeOffice - Svetoslav Zlatev&timeMin=2024-07-31T00:00:00.00Z&timeMax=2024-08-31T00:00:00.00Z&showDeleted=false", {
       method: "GET",
       headers: {
           'Authorization': 'Bearer ' + session.provider_token // Access token for Google
@@ -183,7 +183,7 @@ function populateTableSvetoslav(data) {
   return (
     <div className="App">
 
-      <h1>&#127987;&#65039;&#8205;&#127752; Fancy Calendar &#128054;</h1>
+      <h1>Fancy Calendar</h1>
       <FancyCalendar />
 
        <div style={{width: "400px", margin: "30px auto"}}>
