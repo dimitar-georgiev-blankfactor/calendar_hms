@@ -86,8 +86,8 @@ function populateTableSvetoslav(data) {
     const fetchGoogleCalendarData = async () => {
     let datePattern = handleDropdownChange();
     alert("data returned from method datePattern()"+datePattern);
-    
-    const response = await fetch("https://www.googleapis.com/calendar/v3/calendars/hms@blankfactor.com/events?q=HomeOffice - Svetoslav Zlatev&timeMin=2024-07-31T00:00:00.00Z&timeMax=2024-08-31T00:00:00.00Z&showDeleted=false", {
+
+    const response = await fetch("https://www.googleapis.com/calendar/v3/calendars/hms@blankfactor.com/events?q=HomeOffice - Svetoslav Zlatev&timeMin=" + datePattern + "&showDeleted=false", {
       method: "GET",
       headers: {
           'Authorization': 'Bearer ' + session.provider_token // Access token for Google
