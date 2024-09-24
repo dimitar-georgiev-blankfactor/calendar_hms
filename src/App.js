@@ -127,7 +127,7 @@ function populateTableSvetoslav(data) {
 
   async function getHomeOfficeEmil(datePattern) {
     try {
-        const response = await fetch("https://www.googleapis.com/calendar/v3/calendars/hms@blankfactor.com/events?q=Emil&timeMin=" + datePattern + "&showDeleted=false", {
+        const response = await fetch("https://www.googleapis.com/calendar/v3/calendars/hms@blankfactor.com/events?q=HomeOffice - Emil Cholakov&timeMin=" + datePattern + "&showDeleted=false", {
             method: "GET",
             headers: {
                 'Authorization': 'Bearer ' + session.provider_token // Access token for Google
