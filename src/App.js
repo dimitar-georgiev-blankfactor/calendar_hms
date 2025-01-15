@@ -197,16 +197,18 @@ function populateTableSvetoslav(data) {
             <button onClick={() => getHomeOfficeEmil(handleDropdownChange())}>Fetch Home Office Emil</button>
             <button onClick={() => getHomeOfficeSvetoslav(handleDropdownChange())}>Fetch Home Office Svetoslav</button>
             <select id="myDropdown" onChange={() => handleDropdownChange()}>
-              <option value="2024-06-01T00:00:00.00Z&timeMax=2024-06-30T00:00:00.00Z">June 2024</option>
-              <option value="2024-06-30T00:00:00.00Z&timeMax=2024-07-31T00:00:00.00Z">July 2024</option>
-              <option value="2024-07-31T00:00:00.00Z&timeMax=2024-08-31T00:00:00.00Z">August 2024</option>
-              <option value="2024-08-31T00:00:00.00Z&timeMax=2024-09-30T00:00:00.00Z">Septmber 2024</option>
-              <option value="2024-09-30T00:00:00.00Z&timeMax=2024-10-31T00:00:00.00Z">October 2024</option>
-              <option value="2024-10-31T00:00:00.00Z&timeMax=2024-11-30T00:00:00.00Z">November 2024</option>
-              <option value="2024-11-30T00:00:00.00Z&timeMax=2024-12-31T00:00:00.00Z">December 2024</option>
-              <option value="2025-12-31T00:00:00.00Z&timeMax=2025-01-31T00:00:00.00Z">January 2025</option>
+              <option value="2024-12-31T00:00:00.00Z&timeMax=2025-01-31T00:00:00.00Z">January 2025</option>
               <option value="2025-01-31T00:00:00.00Z&timeMax=2025-02-28T00:00:00.00Z">February 2025</option>
               <option value="2025-02-28T00:00:00.00Z&timeMax=2025-03-31T00:00:00.00Z">March 2025</option>
+              <option value="2025-03-31T00:00:00.00Z&timeMax=2025-04-30T00:00:00.00Z">April 2025</option>
+              <option value="2025-04-30T00:00:00.00Z&timeMax=2025-05-31T00:00:00.00Z">May 2025</option>
+              <option value="2025-05-31T00:00:00.00Z&timeMax=2025-06-30T00:00:00.00Z">June 2025</option>
+              <option value="2025-06-30T00:00:00.00Z&timeMax=2025-07-31T00:00:00.00Z">July 2025</option>
+              <option value="2025-07-31T00:00:00.00Z&timeMax=2025-08-31T00:00:00.00Z">August 2025</option>
+              <option value="2025-08-31T00:00:00.00Z&timeMax=2025-09-30T00:00:00.00Z">September 2025</option>
+              <option value="2025-09-30T00:00:00.00Z&timeMax=2025-10-31T00:00:00.00Z">October 2025</option>
+              <option value="2025-10-31T00:00:00.00Z&timeMax=2025-11-30T00:00:00.00Z">November 2025</option>
+              <option value="2025-11-30T00:00:00.00Z&timeMax=2025-12-31T00:00:00.00Z">December 2025</option>
             </select>
             <p></p>
             <button onClick={() => signOut()}>Sign Out</button>
